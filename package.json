@@ -1,6 +1,6 @@
 {
   "name": "disbott",
-  "version": "0.18.1",
+  "version": "0.19.0",
   "description": "A bot for Discord",
   "scripts": {
     "start:bot": "node bot.js",

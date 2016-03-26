@@ -13,8 +13,7 @@ To start with you'll need nodejs!
 Next you'll want to clone this and then add a `.env` file to the root of the cloned folder with the following:
 
 ```
-DISCORD_EMAIL=
-DISCORD_PASSWORD=
+DISCORD_TOKEN=
 LEAGUE_APIKEY=
 LEAGUE_LOCATION=
 ```

@@ -2,8 +2,7 @@ require('dotenv').load();
 
 var Config = {
 	discord: {
-		email: process.env.DISCORD_EMAIL,
-		password: process.env.DISCORD_PASSWORD,
+		token: process.env.DISCORD_TOKEN,
 	},
 	league: {
 		apikey: process.env.LEAGUE_APIKEY,

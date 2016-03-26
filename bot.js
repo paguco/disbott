@@ -26,9 +26,10 @@ var lastseenCommand = require('./modules/lastseen/command');
 
 var twitter = require('./modules/twitter/index');
 
+var chunder = require('./modules/silly/chunder');
+
 var bot = new DiscordClient({
-	email: Config.discord.email,
-	password: Config.discord.password,
+	token: Config.discord.token,
 });
 
 bot.sendMessages = function (ID, messageArr, interval) {
@@ -60,7 +61,7 @@ bot.connect();
 bot.on('ready', function () {
 	console.log(bot.username + ' - (' + bot.id + ')');
 	bot.setPresence({
-		game: 'Hacking Simulator 2k16'
+		game: 'Hacking Simulator 2k16',
 	});
 
 	// Start the logging function
@@ -79,6 +80,8 @@ bot.on('message', function (user, userID, channelID, message, rawEvent) {
 		about(Config, bot, channelID, message);
 		info(Config, bot, channelID, message);
 		kill(bot, channelID, message);
+
+		chunder(bot, channelID, message);
 
 		league(bot, user, userID, channelID, message);
 
