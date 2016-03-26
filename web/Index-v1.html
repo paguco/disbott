@@ -1,0 +1,103 @@
+<DOCTYPE! html>
+<html>
+	<head>
+		<title>Disbott</title>
+		<link rel="stylesheet" href="stylesheet.css">
+		<link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700,600' rel='stylesheet' type='text/css'>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+	</head>
+	<body>
+		<div>
+			<h1>DISBOTT</h1>
+			<h1>A bot for Discord</h1>
+			<h1>Version 0.19.0</h1>
+		</div>
+		<div>
+			<h2>Install</h2>
+			<p>Check out the repo on Github!</p>
+		</div>
+		<div>
+			<h2>Commands</h2>
+
+			<p>All commands must start with @disbott (or if you have named it something else that!) to not conflict with anyother bots and conform to the Discord Bot Best Practices.</p>
+
+			<p>An example command would be @disbott ping.</p>
+		</div>
+			<h2>General Commands</h2>
+
+			<p>help</p>
+			<p>Brings up this command list!</p>
+
+			<p>about</p>
+			<p>Tells you who the bot is</p>
+
+			<p>info</p>
+			<p>Some information about the bot</p>
+
+			<p>ping</p>
+			<p>The bot will reply to the ping with a pong.</p>
+
+			<p>lastseen=@discorduser</p>
+			<p>The bot will tell you when a user was last online.</p>
+
+			<p>remindme=(time).(unitoftime);(message)</p>
+			<p>The bot will remind you in a DM about the message given at the time given. You can chain multiple `(time).(unitoftime)` in one go e.g. @disbott remindme=2.hours.30.mins.15.s;Reminder Message will DM you in 2hours 30mins &amp; 15secs about "Reminder Message".</p>
+		</div>
+			Management Commands
+
+			createtextinvite=(channel)
+			The bot will create a 6hour instant invite code &amp; link for the given text channel of the server it is currently on.
+
+			createvoiceinvite=(channel)
+			The bot will create a 6hour instant invite code &amp; link for the given voice channel of the server it is currently on.
+
+			join=(code)
+			The bot will join the server/channel of the given code.
+
+			League of Legends Commands
+
+			lolsetsummoner=(summonername)
+			Will link your league username (summonername) with your discord user for ease of use. Only EUW at the moment!
+
+			lolsummoner[=summonername, =@discorduser]
+			Provided you have linked your discord to a league account this command just tells chat what account you are linked to. If you add =@(discorduser) then it'll get their league user (provided they have linked too) and while a little silly it is possible to add =(summonername) which'll tell you the summoner name of the summoner you just searched...
+
+			lolrankedstats[=summonername, =@discorduser]
+			This command will post the specified users ranked status for this season. If you have linked your league account to disbott then you can just do `!lolrankedstats` and that will give you your ranked stats. Only EUW at the moment!
+
+			lolcurrentgame[=summonername, =@discorduser]
+			This command will post the specified users current game with information on who they are playing, what game mode and for approximately how long. If you have linked your league account to disbott then you can omit the = part and it will give you your current game. Only EUW at the moment!
+
+			Sound Commands
+
+			sound=(instantinvitecode)
+			Run this command with an instantinvitecode to make the bot join your voice channel. You only need the code itself not the whole url (ie. not: https://discord.gg/{CODE} but: {CODE}) this must be run first before any of the other sound commands.
+
+			stopsound
+			This command stops any playing audio that the bot is playing, but keeps the bot in the voice channel.
+
+			sounddisconnect
+			This command will instantly disconnect the bot from the voice channel and you'll need to rejoin with sound before playing audio again.
+
+			listsounds
+			Will take you to a website to see all the uploaded sounds to disbott. Also showcases commands for the below command.
+
+			playsound=(file)
+			Plays whatever file specified to the voice channel, where file is the filename in the /modules/sound/sounds/.
+
+			Twitter Commands
+
+			headline
+			The bot gets the latest tweet from The Guardian's (@guardian) twitter feed.
+
+			mirin
+			The bot gets the latest tweet from Furukawa Mirin's' (@FurukawaMirin) twitter feed. She is my idol oshimen!
+
+			gazo
+			WARNING MAYBE NSFW
+
+			The bot gets a random tweet from @idol_gazo's twitter feed and tells name/group & image.
+
+			Built by tomo@pagu
+	</body>
+</html>
